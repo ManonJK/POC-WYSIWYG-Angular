@@ -3,14 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { QuillModule } from 'ngx-quill';
+import { WysiwygComponent } from './wysiwyg/wysiwyg.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    WysiwygComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    QuillModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
